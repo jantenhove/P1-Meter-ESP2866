@@ -229,8 +229,6 @@ bool decodeTelegram(int len) {
     }
   }
 
-  long val =0;
-  long val2=0;
   // 1-0:1.8.1(000992.992*kWh)
   // 1-0:1.8.1 = Elektra verbruik laag tarief (DSMR v4.0)
   if (strncmp(telegram, "1-0:1.8.1", strlen("1-0:1.8.1")) == 0) 
